@@ -80,11 +80,12 @@ curl https://cli.nexus.xyz | sh
 ```
 type Y and click enter
 Press 'Control + Z' keys
+
 set prover ID ( replace "YOUR_PROVER_ID" to your prover ID )
 ```
 echo "YOUR_PROVER_ID" > ~/.nexus/prover-id
 ```
-Get your prover ID you can get from at the botton left
+You can get it from the bottom left of the Nexus page.
 <img width="959" alt="Screenshot 2024-12-12 130509" src="https://github.com/user-attachments/assets/bb91767b-4881-4047-b5b6-af526b797062" />
 Save Your screen
 ```
