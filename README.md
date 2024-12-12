@@ -80,7 +80,7 @@ curl https://cli.nexus.xyz | sh
 ```
 type Y and click enter
 Press 'Control + Z' keys
-set prover ID
+set prover ID ( replace "YOUR_PROVER_ID" to your prover ID )
 ```
 echo "YOUR_PROVER_ID" > ~/.nexus/prover-id
 ```
