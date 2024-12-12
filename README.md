@@ -59,9 +59,6 @@ apt install rustup
 rustup update stable
 ```
 ```
-sudo add-apt-repository universe
-```
-```
 sudo apt update
 ```
 ```
