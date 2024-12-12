@@ -28,6 +28,9 @@ Purchase VPS : https://vpsdime.com/a/4114/linux-vps
 
 - signup with email accout
 - Purchase a basic Linux VPS for one month.
+
+![Screenshot 2024-12-11 165849](https://github.com/user-attachments/assets/10dff796-b22e-4f00-824d-c35a5f210815)
+
   
 Install termius : https://termius.com/download/windows
 
@@ -83,6 +86,20 @@ echo "YOUR_PROVER_ID" > ~/.nexus/prover-id
 ```
 Get your prover ID you can get from at the botton left
 <img width="959" alt="Screenshot 2024-12-12 130509" src="https://github.com/user-attachments/assets/bb91767b-4881-4047-b5b6-af526b797062" />
+Save Your screen
+```
+screen -S nexus
+```
+Run verifier
+```
+curl https://cli.nexus.xyz | sh
+```
+Press 'Control+A+D'
+✅ Done
+You will earn points from the CLI. You can check the profile section.
+![Screenshot 2024-12-12 131942](https://github.com/user-attachments/assets/222d3288-2d43-4806-b6e3-787d31cc7591)
+
+
 
 
 
