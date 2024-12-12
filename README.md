@@ -44,42 +44,50 @@ Install termius : https://termius.com/download/windows
 - enter username root
 - enter your password
 
-Update your system
+System Update and Initial Setup
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-Install required packages
 ```
-sudo apt install -y build-essential pkg-config libssl-dev git-all
+sudo apt install -y build-essential curl wget git
 ```
-Install Rust using rustup & rust environment
+Install Rust and Update Toolchain
 ```
-curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
-```
-press 1 and click enter
-```
- . "$HOME/.cargo/env
-```
-Verify rust installation & reboot
-```
-rustc --version
+apt install rustup
 ```
 ```
-cargo --version
+rustup update stable
 ```
 ```
-sudo reboot
+sudo add-apt-repository universe
 ```
-compile
+```
+sudo apt update
+```
 ```
 sudo apt install -y protobuf-compiler
 ```
-Nexus CLI
+Install Nexus CLI
 ```
-curl https://cli.nexus.xyz | sh
+curl https://cli.nexus.xyz/ | sh
 ```
-type Y and click enter
-Press 'Control + Z' keys
+There will be an Error, don’t worry, keep going
+```
+source $HOME/.cargo/env
+```
+```
+echo 'source $HOME/.cargo/env' >> ~/.rc
+```
+Install Additional Dependencies
+```
+sudo apt install -y pkg-config
+```
+```
+sudo apt install -y libssl-dev
+```
+```
+sudo apt install -y protobuf-compiler
+```
 
 set prover ID ( replace "YOUR_PROVER_ID" to your prover ID )
 ```
@@ -91,7 +99,7 @@ Save Your screen
 ```
 screen -S nexus
 ```
-Run verifier
+run verifier
 ```
 curl https://cli.nexus.xyz | sh
 ```
