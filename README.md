@@ -68,44 +68,19 @@ Install Nexus CLI
 ```
 curl https://cli.nexus.xyz/ | sh
 ```
-There will be an Error, don’t worry, keep going
-```
-source $HOME/.cargo/env
-```
-```
-echo 'source $HOME/.cargo/env' >> ~/.rc
-```
-Install Additional Dependencies
-```
-sudo apt install -y pkg-config
-```
-```
-sudo apt install -y libssl-dev
-```
-```
-sudo apt install -y protobuf-compiler
-```
+set your prover id ( You can get it from the bottom left of the Nexus page. )
+<img width="959" alt="Screenshot 2024-12-12 130509" src="https://github.com/user-attachments/assets/fe318259-c652-4474-91fd-d4d92fcb215d" />
+✅ Done, Now, wait a few minutes for your node to display as shown in the attached screenshot. Congratulations, your node has been deployed successfully. now you can close your termius application
 
-set prover ID ( replace "YOUR_PROVER_ID" to your prover ID )
-```
-echo "YOUR_PROVER_ID" > ~/.nexus/prover-id
-```
-or
-replace prover id
+If you want to change the prover ID, then use this command.
 ```
 nano ~/.nexus/prover-id
 ```
-You can get it from the bottom left of the Nexus page.
-<img width="959" alt="Screenshot 2024-12-12 130509" src="https://github.com/user-attachments/assets/bb91767b-4881-4047-b5b6-af526b797062" />
-Save Your screen
-```
-screen -S nexus
-```
-run verifier
+After closing Termius, if you want to check your node again, use the run command.
 ```
 curl https://cli.nexus.xyz | sh
 ```
-Press 'Control+A+D'
+
 ✅ Done
 You will earn points from the CLI. You can check the profile section.
 ![Screenshot 2024-12-12 131942](https://github.com/user-attachments/assets/222d3288-2d43-4806-b6e3-787d31cc7591)
@@ -142,4 +117,3 @@ You will earn points from the CLI. You can check the profile section.
 
 
 
-### Account setup
